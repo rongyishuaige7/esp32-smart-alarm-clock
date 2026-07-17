@@ -1,0 +1,31 @@
+# PlatformIO / firmware outputs
+.pio/
+*.bin
+*.elf
+*.map
+*.o
+*.a
+
+# Flutter / Dart generated state and release outputs
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+build/
+dist/
+.gradle/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# IDE and machine-local files
+.vscode/
+.idea/
+*.iml
+*.pyc
+__pycache__/
+.DS_Store
+
+# Audio assets need their own provenance and redistribution review.
+*.wav

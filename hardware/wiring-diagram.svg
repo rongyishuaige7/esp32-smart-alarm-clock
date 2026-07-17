@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 智能闹钟接线边界图</title>
+  <desc id="desc">根据公开源码整理的 ESP32、OLED、DHT11、PIR、停止按钮、单色 LED 与 MAX98357A 接线边界；当前硬件尚未重新真机复测。</desc>
+  <style>
+    :root{color-scheme:light dark}.bg{fill:#fff}.core{fill:#fff8f1;stroke:#e87524;stroke-width:3}.module{fill:#f6f8fa;stroke:#59636e;stroke-width:2}.pending{fill:#fff4d6;stroke:#b7791f;stroke-width:2;stroke-dasharray:9 7}.wire{stroke:#334155;stroke-width:3;fill:none}.power{stroke:#d14343;stroke-width:3;fill:none}.title{font:700 24px ui-sans-serif,system-ui,sans-serif;fill:#18202a}.text{font:18px ui-sans-serif,system-ui,sans-serif;fill:#334155}.note{font:600 17px ui-sans-serif,system-ui,sans-serif;fill:#9a3412}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}.core{fill:#21170f;stroke:#ff8a3d}.module{fill:#161b22;stroke:#8b949e}.pending{fill:#2a2112;stroke:#d29922}.wire{stroke:#c9d1d9}.power{stroke:#ff7b72}.title{fill:#f0f6fc}.text{fill:#c9d1d9}.note{fill:#ffa657}}
+  </style>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="title" x="50" y="50">ESP32 智能闹钟 · 接线边界图</text>
+  <text class="text" x="50" y="82">按当前源码整理；不是 PCB 原理图；当前提交尚未重新真机复测</text>
+  <rect class="core" x="430" y="155" width="350" height="430" rx="24"/>
+  <text class="title" x="548" y="210">ESP32</text>
+  <text class="text" x="472" y="260">GPIO21/22 · OLED I²C</text>
+  <text class="text" x="472" y="310">GPIO4 · DHT11 DATA</text>
+  <text class="text" x="472" y="360">GPIO18 · Stop button</text>
+  <text class="text" x="472" y="410">GPIO19 / GPIO5 · PIR / LED</text>
+  <text class="text" x="472" y="460">GPIO26/25/33 · MAX98357A I²S</text>
+  <text class="text" x="472" y="510">STA + NTP · AP config :81</text>
+  <text class="text" x="472" y="550">REST :80 only after STA connects</text>
+  <rect class="pending" x="50" y="135" width="290" height="100" rx="14"/>
+  <text class="title" x="88" y="173">SSD1306 OLED</text><text class="text" x="88" y="207">SDA → GPIO21 · SCL → GPIO22</text><text class="text" x="88" y="230">型号、电压、上拉待确认</text><path class="wire" d="M340 185 H430"/>
+  <rect class="pending" x="50" y="285" width="290" height="100" rx="14"/>
+  <text class="title" x="88" y="323">DHT11 + PIR</text><text class="text" x="88" y="357">DATA → GPIO4 · OUT → GPIO19</text><text class="text" x="88" y="380">模块和供电待实物确认</text><path class="wire" d="M340 335 H430"/>
+  <rect class="module" x="50" y="445" width="290" height="85" rx="14"/>
+  <text class="title" x="88" y="483">停止按钮</text><text class="text" x="88" y="514">GPIO18 → button → GND</text><path class="wire" d="M340 487 H430"/>
+  <rect class="pending" x="870" y="145" width="280" height="105" rx="14"/>
+  <text class="title" x="908" y="183">RGB LED（仅绿灯）</text><text class="text" x="908" y="217">G → GPIO5 · 共地</text><text class="text" x="908" y="241">共阳/共阴需同步改宏</text><path class="wire" d="M780 200 H870"/>
+  <rect class="pending" x="870" y="325" width="280" height="125" rx="14"/>
+  <text class="title" x="908" y="363">MAX98357A + Speaker</text><text class="text" x="908" y="397">BCLK → GPIO26 · WS → GPIO25</text><text class="text" x="908" y="421">DIN → GPIO33 · 独立匹配供电</text><text class="text" x="908" y="445">扬声器规格待确认</text><path class="wire" d="M780 385 H870"/>
+  <rect class="module" x="870" y="525" width="280" height="75" rx="14"/>
+  <text class="title" x="908" y="563">USB / 稳压电源</text><text class="text" x="908" y="591">ESP32 与所有模块共地</text><path class="power" d="M1010 450 V660 H605 V585"/>
+  <text class="note" x="50" y="680">虚线模块需核实精确型号、供电、上拉和限流。GPIO 不得直接驱动大电流负载、继电器或市电。</text>
+  <text class="text" x="50" y="720">The AP configuration page is local and open; REST begins only after STA connection and is not a secure network service.</text>
+</svg>

@@ -1,0 +1,11 @@
+reference,quantity,part_or_module,role,status,notes
+U1,1,ESP32 development board,main controller,source-confirmed,"PlatformIO target esp32dev; exact board vendor/Flash/USB bridge pending hardware confirmation"
+DISP1,1,SSD1306 OLED module,time and status display,source-confirmed,"I2C GPIO21/GPIO22; controller, voltage and size pending"
+SENS1,1,DHT11 module,temperature and humidity input,source-confirmed,"DATA GPIO4; DHT_TYPE is DHT11 in source"
+SENS2,1,PIR motion sensor,motion input,source-confirmed,"GPIO19; exact module and output behavior pending"
+SW1,1,momentary stop button,stop alarm input,source-confirmed,"GPIO18 INPUT_PULLUP, falling edge; physical debounce pending"
+LED1,1,RGB LED module using green channel only,motion indicator,source-confirmed,"GPIO5; current source uses G only, common-anode/cathode setting must match hardware"
+AMP1,1,MAX98357A I2S amplifier,audio output,source-confirmed,"BCLK/WS/DIN GPIO26/GPIO25/GPIO33; power and speaker rating pending"
+SPK1,1,compatible speaker,audible alarm,hardware-pending,"Confirm impedance, power rating, enclosure and supply before use"
+PS1,1,regulated supply and USB cable,power and programming,hardware-pending,"Must support ESP32 Wi-Fi and audio transient current; all modules share ground"
+MISC,1,hookup wire and suitable resistors/interconnect,document-confirmed,"Confirm actual LED current limiting and voltage domains before wiring"
