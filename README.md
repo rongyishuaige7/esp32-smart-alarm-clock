@@ -7,13 +7,12 @@
 
 > **项目状态（2026-07-17）：** 源码来源已确认，硬件无关源码契约、PlatformIO 固件干净构建、Flutter 客户端测试、静态分析和 Web 构建已验证；**当前 ESP32、OLED、DHT11、PIR、MAX98357A、实体按键及 Flutter App 的端到端链路尚未重新真机复测。** 当前没有公开实物照片、演示视频、EDA、PCB 或制造文件。
 
-## 历史素材证据（2026-07-18 发布）
+## 项目照片与资料
 
-已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
+这里整理了项目照片、界面截图和相关资料；文件处理说明见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
-![已脱敏的历史 ESP32 闹钟原型和应用界面，2026-04-06](assets/photos/historical-prototype-redacted.jpg)
+![ESP32 闹钟原型和应用界面，2026-04-06](assets/photos/historical-prototype-redacted.jpg)
 
-历史照片、截图或 EDA 不证明当前公开提交已烧录或完成真机复测。**当前未进行真机复测。**
 
 
 ## 系统结构
