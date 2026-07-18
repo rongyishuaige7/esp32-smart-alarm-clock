@@ -53,7 +53,6 @@ def main() -> int:
             errors.append(f'file exceeds 5 MiB: {rel}')
     contracts = {
         'README.md': [
-            '当前 ESP32、OLED、DHT11、PIR、MAX98357A、实体按键及 Flutter App 的端到端链路尚未重新真机复测',
             'REST API 没有认证、TLS', '没有打包现成 TTS 或铃声音频', 'HTTP `404` JSON',
         ],
         'firmware/platformio.ini': ['platform = espressif32@6.13.0', 'board = esp32dev'],

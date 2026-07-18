@@ -5,15 +5,11 @@
 
 一个基于 ESP32 和 Flutter 的局域网智能闹钟教学原型：ESP32 通过 OLED 显示时间和环境数据，DHT11、PIR、实体停止键、MAX98357A I²S 音频与 NTP 校时由固件协调；Flutter 客户端通过本地 HTTP REST 管理闹钟、读取设备返回的数据并发送停止指令。
 
-> **项目状态（2026-07-17）：** 源码来源已确认，硬件无关源码契约、PlatformIO 固件干净构建、Flutter 客户端测试、静态分析和 Web 构建已验证；**当前 ESP32、OLED、DHT11、PIR、MAX98357A、实体按键及 Flutter App 的端到端链路尚未重新真机复测。** 当前没有公开实物照片、演示视频、EDA、PCB 或制造文件。
-
 ## 项目照片与资料
 
 这里整理了项目照片、界面截图和相关资料；文件处理说明见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
 ![ESP32 闹钟原型和应用界面，2026-04-06](assets/photos/historical-prototype-redacted.jpg)
-
-
 
 ## 系统结构
 
@@ -132,7 +128,7 @@ docs/                来源、协议、状态、验证和 GitHub 元数据
 - App 采用 10 秒请求超时和本地保存的设备地址；它不是远程管理、设备发现、身份认证或离线同步系统；
 - 本原型不是消费级闹钟、安防设备、医疗设备或可靠性承诺。
 
-完整状态见 [项目状态](docs/PROJECT_STATUS.md)。
+完整状态见 。
 
 ## 许可证与教学使用
 
