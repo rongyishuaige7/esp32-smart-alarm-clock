@@ -1,0 +1,9 @@
+name,designator,footprint,quantity,part_number,manufacturer
+3W喇叭,BUZZER1,3W,1,SUN-12085D-5,ReliaPro
+RGBLED,J1,RGBLED排针,1,,
+0.96OLED_4P_MODULE_JX,OLED1,0.96OLED_4P,1,0.96OLED_4P_MODULE_JX,null
+ESP32,U1,NODEMCU-ESP32-30PIN,1,,
+HC-SR501,U2,HC-SR501人体传感器,1,,
+DHT11 模块,U3,DHT11模块,1,,
+MAX98357A模块,U4,MAX98357A模块,1,,
+按键模块,U5,按键模块封装图,1,,

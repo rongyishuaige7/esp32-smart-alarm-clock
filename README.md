@@ -7,6 +7,15 @@
 
 > **项目状态（2026-07-17）：** 源码来源已确认，硬件无关源码契约、PlatformIO 固件干净构建、Flutter 客户端测试、静态分析和 Web 构建已验证；**当前 ESP32、OLED、DHT11、PIR、MAX98357A、实体按键及 Flutter App 的端到端链路尚未重新真机复测。** 当前没有公开实物照片、演示视频、EDA、PCB 或制造文件。
 
+## Historical material evidence (2026-07-18 publication)
+
+sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+
+![Redacted historical ESP32 alarm-clock prototype and App, 2026-04-06](assets/photos/historical-prototype-redacted.jpg)
+
+Historical media/EDA do not prove that the current public commit was flashed or re-tested on hardware. **Current hardware re-test not run.**
+
+
 ## 系统结构
 
 ```text
