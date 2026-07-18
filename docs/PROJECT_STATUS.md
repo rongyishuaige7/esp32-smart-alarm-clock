@@ -33,8 +33,8 @@ PlatformIO 固件与 Flutter 客户端构建已验证
 
 在完成日期化、精确 commit 绑定的实物复测前，不得使用“硬件已验证”“稳定运行”“声音正常播放”“App 已连接”“设备在线”“生产就绪”或类似表述。
 
-## Historical media and EDA added on 2026-07-18
+## 2026-07-18 新增的历史素材与 EDA
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md)。
 
-This publication update adds historical evidence only. Current hardware re-test not run.
+本次发布仅新增历史证据。当前未进行真机复测。
