@@ -52,7 +52,7 @@ class SourceContracts(unittest.TestCase):
     def test_network_policy_is_declared(self):
         self.assertIn('android:usesCleartextTraffic="true"', read('app/android/app/src/main/AndroidManifest.xml'))
         self.assertIn('NSAllowsLocalNetworking', read('app/ios/Runner/Info.plist'))
-        self.assertIn('无认证、无 TLS', read('docs/PROJECT_STATUS.md'))
+        self.assertIn('没有认证、TLS', read('README.md'))
 
     def test_widget_test_tracks_visible_title(self):
         self.assertIn("find.text('ESP32 智能闹钟')", read('app/test/widget_test.dart'))
