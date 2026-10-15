@@ -20,9 +20,9 @@ PATTERNS = [
 ]
 # These exact lines are provenance evidence or source-level teaching boundary, not user credentials.
 ALLOWED_EXACT_LINES = {
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/esp32_alarm_clock'),
-    ('docs/SOURCE_PROVENANCE.md', '/mnt/shared/2026项目/esp32_alarm_clock.zip'),
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/esp32-smart-alarm-clock'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/esp32_alarm_clock'),
+    ('docs/SOURCE_PROVENANCE.md', 'source-archives/2026项目/esp32_alarm_clock.zip'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/esp32-smart-alarm-clock'),
 }
 
 def tracked_files(root: Path) -> list[Path]:

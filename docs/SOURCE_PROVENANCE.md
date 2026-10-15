@@ -5,8 +5,8 @@
 ## 只读来源
 
 ```text
-/home/rongyi/桌面/esp32_alarm_clock
-/mnt/shared/2026项目/esp32_alarm_clock.zip
+~/桌面/esp32_alarm_clock
+source-archives/2026项目/esp32_alarm_clock.zip
 ```
 
 历史 ZIP SHA-256：
@@ -33,7 +33,7 @@ cea0eb2af1cfbd90ee15f1a901f1246faee4519b6822fa624c394ea34c67e6bb
 公开候选目录是：
 
 ```text
-/home/rongyi/桌面/esp32-smart-alarm-clock
+~/桌面/esp32-smart-alarm-clock
 ```
 
 在不改动来源目录的前提下：
